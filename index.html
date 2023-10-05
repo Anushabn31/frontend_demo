@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/man-2604149_1920.jpg');
+        font-family: 'Baloo bhai',cursive;
+    }
+    .left{
+        display:inline-block;
+        position:absolute ;
+        left: 34px;
+        top: 20px;
+        border:2px ;
+        list-style: none;
+        text-align: center;
+    }
+    .left img{
+        width:100px ;
+        filter: brightness(100%);
+    }
+    .mid{
+        display: block;
+        width:50%;
+        margin: 10px auto;
+        border:2px;
+    }
+    .right{
+        position:absolute ;
+        right: 34px;
+        top: 23px;
+        display:inline-block;
+        border:2px;
+    }
+    .navbar{
+        display:inline-block ;
+    }
+    .navbar li{
+        color: white;
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        color:rgb(235, 150, 150);
+        text-decoration: underline;
+        padding: 20px;
+    }
+    .btn{
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius:10px ;
+        font-size:20px ;
+        cursor: pointer;
+        font-family: 'Baloo bhai',cursive;
+    }
+    .btn:hover{
+        background-color: rgb(244, 162, 162);
+    }
+    .container{
+        border: 2px solid white;
+        margin: 80px 80px;
+        padding: 15px 15px;
+        width: 30%;
+        border-radius: 15px;
+        text-size-adjust: 20px;
+        text-align: center;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 70%;
+        border:white;
+        margin:3px auto ;
+        padding: 5px;
+        font-size: medium;
+        border-radius: 5px;
+        font-family: 'Baloo bhai',cursive;
+        text-emphasis-color: rgb(10, 10, 10);
+    }
+    .container button{
+        width: 73%;
+        border-radius: 5px;
+        margin:3px auto ;
+        padding: 5px;
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+           <img src="img/dumbbells-2465478_1920.jpg" alt="">
+           <div>Fitness</div>
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+             </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+       <h1>Join the best gym</h1>
+       <form action="noaction.php">
+        <div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+                <input type="text" age="" placeholder="Enter your Age">
+                <input type="text" gender="" placeholder="Enter your Gender">
+                <input type="text" address="" placeholder="Enter your Address">
+            </div>
+            <button class="=btn">submit</button>
+        </div>
+       </form>
+    </div>
+</body>
+</html>
